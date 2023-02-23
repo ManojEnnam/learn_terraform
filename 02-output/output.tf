@@ -2,6 +2,6 @@ output "sample" {
   value = "Hello World"
 }
 
-output "sample 1" {
+output "sample1" {
   value = "hello world"
 }
