@@ -40,5 +40,5 @@ variable "sample7" {
 }
 
 output "types" {
-  value = "value sample 5 - ${var.sample5}, first value in list ${var.sample6[4]}, boolean value in map=${var.sample7["boolean"]}"
+  value = "value sample 5 - ${var.sample5}, first value in list - ${var.sample6[4]}, boolean value in map=${var.sample7["boolean"]}"
 }
