@@ -4,7 +4,7 @@ data "aws_ami" "ami" {
   owners      = ["973714476881"]
 }
 
-resource "aws_instance" "Frontend" {
+resource "aws_instance" "frontend" {
   ami ="ami-0a017d8ceb274537d"
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0a24894194ed64d1c"]
@@ -22,7 +22,7 @@ resource "aws_route53_record" "frontend" {
 }
 
 
-resource "aws_instance" "mongobd" {
+resource "aws_instance" "mongodb" {
   ami ="ami-0a017d8ceb274537d"
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0a24894194ed64d1c"]
